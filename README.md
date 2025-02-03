@@ -1,11 +1,16 @@
 # Expected Possession Value Prevented
 This contains the code used in the creation of a new defensive metric called Expected Possession Value prevented which was presented at the 2025 American Soccer Insights Summit. The dataset consists of Skillcorner tracking data from the 2024 National Women's Soccer League season and the 2023-2024 English Women's Super League as well as Wyscout event data synced to the tracking data for those seasons.
+
 The website for the conference is here: https://americansoccerinsights.com/ 
+
 You can find Skillcorner's open data to see data similar to what I was working with looks like here: https://github.com/SkillCorner/opendata
 # Introduction:
 Measuring defensive skill is a known hard problem in soccer analytics. There are generally two commonly thought of aspects of defensive skill:
+
 1.) The ability to win the ball via a tackle or interception and 
+
 2.) The ability to prevent dangerous passes and runs via positioning.
+
 Winning the ball back is extremely valuable, but is also high risk. A missed tackle frequently results in the opposing team breaking a line of pressure. Measuring the effect of a defenders off-ball positioning on mitigating risk is extremely difficult, even with access to tracking data. This project originates in the idea that we may be missing something in between the above two ideas.
 As coaches, players, and fans we recognize that not every defensive engagement with a ball-carrier will result in an attempted tackle or interception. We also recognize that this is frequently not a failure of the defender. In fact, there are many scenarios where it is likely a better option to simply show the attacker to a less dangerous area of the pitch or force a less dangerous pass. In this project, I attempt to quantify how good a player is at preventing dangerous play without necessarily winning the ball back.
 # The model:
