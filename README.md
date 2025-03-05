@@ -1,7 +1,13 @@
 # Expected Possession Value Prevented
 This contains the code used in the creation of a new defensive metric called Expected Possession Value prevented which was presented at the 2025 American Soccer Insights Summit. The dataset consists of Skillcorner tracking data from the 2024 National Women's Soccer League season and the 2023-2024 English Women's Super League as well as Wyscout event data synced to the tracking data for those seasons.
 
-The website for the conference is here: https://americansoccerinsights.com/ 
+The website for the conference is here: https://americansoccerinsights.com/
+
+A recording of my presentation is available here: https://youtu.be/ts0veG2_doQ?si=1aSUpptvF4b0L1jN 
+
+A summary of the conference including a short discussion of this work written for American Soccer Analysis by Akshay Easwaran can be found here: https://www.americansocceranalysis.com/home/2025/3/3/a-day-at-the-american-soccer-insights-summit-the-latest-and-greatest-in-soccer-analytics
+
+Likewise a summary written by Phil West for Verde All Day can be found here: https://verdeallday.com/american-soccer-insights-summit-report-rice-university/ 
 
 You can find Skillcorner's open data to see data similar to what I was working with looks like here: https://github.com/SkillCorner/opendata
 # Introduction:
@@ -19,4 +25,4 @@ I trained an XGBoost regression model to predict the Expected Possession Value (
 The metric, Expected Possession Value prevented (EPVp) is calculated as the difference between predicted EPV added and actual EPV added.
 $$ EPVp = (predicted EPV added) - (EPV added)$$
 # The code:
-The files Skillcorner_IO_pub, ext_EPV_model_training_pub, and Get_1v1s_pub contain the code used to train the model and generate the data used in the presentation given at ASI. A longer blog post is in the works to explain this work and explore it further. The slides of the presentation are available on this page, and a youtube video of the presentation will be available soon.
+The files Skillcorner_IO_pub, ext_EPV_model_training_pub, and Get_1v1s_pub contain the code used to train the model and generate the data used in the presentation given at ASI. A longer blog post is in the works to explain this work and explore it further. The slides of the presentation are available on this page.
